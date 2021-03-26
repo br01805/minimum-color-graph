@@ -33,9 +33,8 @@ class Backtracking():
             return False
 
         # Print the solution
-        print("Solution exist and Following are the assigned colours:")
-        for c in colour:
-            print(c),
+        for u in range(self.V):
+            print("Vertex", u, " --->  Color", colour[u])
         return True
 
 # # Driver Code
