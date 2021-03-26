@@ -1,0 +1,17 @@
+tornado
+synapse==2.26.0
+requests
+pconf
+tldextract
+whoosh
+python-arango
+jsonschema
+stix2==1.1.2
+stix2-patterns==1.1.0
+stix2-validator==1.1.2
+psutil
+tld
+bs4
+html2text
+tranco
+cryptography==2.8.0

@@ -1,0 +1,6 @@
+{
+  "comment": "Set Integration (test/demo system) configuration variables that should override the default config.json",
+  "arango_host": "docker-arango",
+  "arango_dbname": "sherlock_production_v2",
+  "cortex_host": "cortex"
+}

@@ -1,0 +1,25 @@
+[run]
+omit = 
+      #omit routes
+      ./api/routes/*
+
+      #omit main server 
+      ./api/server.py
+
+      #omit test files
+      ./test/*
+
+      #omit dev_env
+      ./api/libs/dev_env.py
+
+[report]
+exclude_lines =
+      pragma: no cover
+      def __repr__
+      if self\.debug
+      raise AssertionError
+      raise NotImplementedError
+      if 0:
+      if __name__ == .__main__.:
+
+      

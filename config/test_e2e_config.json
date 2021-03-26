@@ -1,0 +1,11 @@
+{
+    "logdir": "./",
+    "add_test_data": true,
+    "server_port": 3100,
+    "loglevel": "ERROR",
+    "cortex": "tcp://localhost:5002/servicecore",
+    "scraper": "http://localhost:3008",
+    "arango_dbname": "sherlock_test",
+    "arango_admin_password": "BigInternet9!",
+    "arango_query_password": "BigInternet9!"
+}

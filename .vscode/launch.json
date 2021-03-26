@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+
+        {
+            "name": "Python2: server.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/api/server.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PY_ENV": "development",
+                "arango_host": "localhost",
+                "arango_admin_password": "BigInternet9!",
+                "arango_query_password": "BigInternet9!",
+                "arango_dbname": "sherlock_test",
+                "cortex_password":"BigIntel4U",
+                "cortex_host": "localhost",
+                "server_port":"3006",
+                "storm_sudo": ";qW68Y",
+                "loglevel": "DEBUG"
+              }
+        }
+    ]
+}

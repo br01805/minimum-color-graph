@@ -1,0 +1,16 @@
+{
+  "axon": "http://localhost:3010",
+  "scraper": "http://localhost:3008",
+  "cortex_type": "ram",
+  "cortex_password": "BigIntel4U",
+  "cortex_global": false,
+  "filestore": "http://localhost:3009",
+  "filestore_reports": "http://localhost:3009/api/v1/filestore/reports",
+  "logdir": "./",
+  "add_test_data": true,
+  "server_port": 3100,
+  "arango_host": "localhost",
+  "arango_dbname": "sherlock_test",
+  "arango_admin_password": "BigInternet9!",
+  "arango_query_password": "BigInternet9!"
+}
