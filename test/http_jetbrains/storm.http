@@ -1,8 +1,0 @@
-POST http://localhost:3006/api/v1/synapse/storm
-Content-Type: application/json
-
-{
-  "storm": "ask inet:ipv4=9.9.9.9"
-}
-
-###
