@@ -1,9 +1,4 @@
 {
   "comment": "Set Development configuration variables that should override the default config.json",
   "loglevel": "DEBUG",
-  "scraper": "http://localhost:3008",
-  "filestore_reports": "http://localhost:3009/api/v1/filestore/reports",
-  "arango_admin_password": "BigInternet9!",
-  "arango_query_password": "BigInternet9!",
-  "arango_dbname": "sherlock_test"
 }

@@ -2,7 +2,7 @@ class Greedy:
     def __init__(self, logger):
         self.logger = logger
 
-    def addEdge(self, adj, v, w):
+    def add_edge(self, adj, v, w):
 
         adj[v].append(w)
 
@@ -10,14 +10,12 @@ class Greedy:
         adj[w].append(v)
         return adj
 
-    # Assigns colors (starting from 0) to all
-    # vertices and prints the assignment of colors
-    def greedyColoring(self, adj, V):
+    #Assign colors to vertices
+    def greedy_coloring(self, adj, V):
 
-        result = [-1] * V
+        res = [-1] * V
 
-        # Assign the first color to first vertex
-        result[0] = 0;
+        res[0] = 0  # Assign the first color to first vertex
 
 
         # A temporary array to store the available colors.
@@ -28,11 +26,10 @@ class Greedy:
         # Assign colors to remaining V-1 vertices
         for u in range(1, V):
 
-            # Process all adjacent vertices and
-            # flag their colors as unavailable
+            # Process all adjacent vertices and flag their colors as unavailable
             for i in adj[u]:
-                if (result[i] != -1):
-                    available[result[i]] = True
+                if res[i] != -1:
+                    available[res[i]] = True
 
             # Find the first available color
             cr = 0
@@ -41,16 +38,14 @@ class Greedy:
                     break
 
                 cr += 1
+            res[u] = cr  # Assign the found color
 
-            # Assign the found color
-            result[u] = cr
-
-            # Reset the values back to false
-            # for the next iteration
+            # Reset the values back to false for the next iteration
             for i in adj[u]:
-                if (result[i] != -1):
-                    available[result[i]] = False
+                if (res[i] != -1):
+                    available[res[i]] = False
 
-        # Pint the result
         for u in range(V):
-            print("Vertex", u, " --->  Color", result[u])
+            print("Vertex", u, " --->  Color", res[u])
+
+        return res

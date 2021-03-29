@@ -20,29 +20,17 @@ def run_greedy():
     print("------ Greedy Algorithm --------- ")
     start = time.perf_counter()
     greedy = Greedy(logger)
-    g1 = [[] for i in range(5)]
-    g1 = greedy.addEdge(g1, 0, 1)
-    g1 = greedy.addEdge(g1, 0, 2)
-    g1 = greedy.addEdge(g1, 1, 2)
-    g1 = greedy.addEdge(g1, 1, 3)
-    g1 = greedy.addEdge(g1, 2, 3)
-    g1 = greedy.addEdge(g1, 3, 4)
+    g1 = [[] for i in range(4)]
+    g1 = greedy.add_edge(g1, 0, 1)
+    g1 = greedy.add_edge(g1, 0, 2)
+    g1 = greedy.add_edge(g1, 1, 2)
+    g1 = greedy.add_edge(g1, 1, 3)
+    g1 = greedy.add_edge(g1, 2, 3)
     print("Coloring of graph 1 ")
-    greedy.greedyColoring(g1, 5)
+    greedy.greedy_coloring(g1, 4)
     finish = time.perf_counter()
     seconds = (finish - start) * 1000
     print('Greedy algorithm took %s milliseconds' % seconds)
-
-    # g2 = [[] for i in range(5)]
-    # g2 = greedy.addEdge(g2, 0, 1)
-    # g2 = greedy.addEdge(g2, 0, 2)
-    # g2 = greedy.addEdge(g2, 1, 2)
-    # g2 = greedy.addEdge(g2, 1, 4)
-    # g2 = greedy.addEdge(g2, 2, 4)
-    # g2 = greedy.addEdge(g2, 4, 3)
-    # print("\nColoring of graph 2")
-    # greedy.greedyColoring(g2, 5)
-
 
 def run_backtracking():
     """Backtracking Algorithm"""
@@ -51,7 +39,7 @@ def run_backtracking():
     g = Backtracking(4)
     g.graph = [[0, 1, 2, 1], [1, 0, 1, 0], [1, 1, 0, 1], [1, 0, 1, 0]]
     m = 4
-    g.graphColouring(m)
+    g.graph_backtrack(m)
     finish = time.perf_counter()
     seconds = (finish - start) * 1000
     print('Backtracking took %s milliseconds' % seconds)

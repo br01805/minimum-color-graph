@@ -1,7 +1,3 @@
 {
   "comment": "Set Production configuration variables that should override the default config.json",
-  "arango_admin_password": "xx",
-  "arango_query_password": "xx",
-  "arango_dbname": "sherlock_test",
-  "cortex_host": "cortex"
 }
